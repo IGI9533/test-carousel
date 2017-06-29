@@ -1,0 +1,44 @@
+.irs-line {
+    height: 6px;
+}
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right {
+    background: #ddd;
+    height: 6px;
+}
+.irs-bar,
+.irs-bar-edge {
+    background: $orange;
+    height: 6px;
+}
+.irs-grid-pol.small {
+    height: 0;
+}
+.irs-grid-text {
+    display: none;
+}
+.irs-grid-pol {
+    background: $white;
+    top: -15px;
+    height: 6px;
+    width: 4px;
+    z-index: 1;
+}
+.irs-single {
+    background: none;
+    color: $black;
+    font-size: 16px;
+    font-weight: 900;
+    top: -15px;
+    &:after {
+        display: none;
+    }
+}
+.irs-slider {
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px -3px #000000;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+}
