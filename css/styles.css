@@ -132,7 +132,7 @@ mark {
 body {
   color: #434149;
   background: #fff;
-  font: 19px/22px "Neris-light", "Tahoma", sans-serif;
+  font: 19px/22px "Neris", "Tahoma", sans-serif;
   min-width: 320px;
   margin: 0; }
 
@@ -140,22 +140,45 @@ body {
   max-width: 1410px;
   margin: 0 auto; }
 
+h1 {
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 900;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
 @font-face {
-  font-family: 'Neris-light';
+  font-family: 'Neris';
   src: url("../fonts/neris-light-webfont.woff2") format("woff2"), url("../fonts/neris-light-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Neris-black';
-  src: url("../fonts/neris-black-webfont.woff2") format("woff2"), url("../fonts/neris-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Neris-semibold';
+  font-family: 'Neris';
   src: url("../fonts/neris-semibold-webfont.woff2") format("woff2"), url("../fonts/neris-semibold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Neris';
+  src: url("../fonts/neris-black-webfont.woff2") format("woff2"), url("../fonts/neris-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+.carousel {
+  position: relative; }
+
+.carousel .mask {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+
+.carousel .mask .slideset {
+  width: 99999px;
+  float: left; }
+
+.carousel .mask .slide {
+  float: left; }
 
 /*# sourceMappingURL=styles.css.map */

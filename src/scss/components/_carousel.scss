@@ -1,0 +1,15 @@
+.carousel {
+	position: relative;
+}
+.carousel .mask {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.carousel .mask .slideset {
+	width: 99999px;
+	float: left;
+}
+.carousel .mask .slide {
+	float: left;
+}

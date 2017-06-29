@@ -10,3 +10,11 @@ body {
 	margin: 0 auto;
 	@extend %clearfix;
 }
+h1 {
+	font-size: 50px;
+	line-height: 52px;
+	font-weight: 900;
+	margin: 0 0 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
