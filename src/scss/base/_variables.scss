@@ -1,0 +1,34 @@
+$grey: #f1f1f1;
+$black: #434149;
+$white: #fff;
+$orange: #ffcb00;
+
+$base-text-color: $black;
+$base-background-color: $white;
+$second-background-color: $grey;
+$base-link-color: $orange;
+
+$base-font-family: "Neris-light", "Tahoma", sans-serif;
+$base-font-size: 19px;
+$base-line-height: 22px;
+
+$base-min-width: 320px;
+
+$breakpoints: (
+  xs-phone: 320px,
+  phone: 670px,
+  tablet: 768px,
+  large: 1024px,
+  wide: 1200px,
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
