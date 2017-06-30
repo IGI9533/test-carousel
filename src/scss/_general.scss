@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 .container {
-	max-width: 1410px;
+	max-width: 1510px;
 	margin: 0 auto;
 	@extend %clearfix;
 }
@@ -14,7 +14,10 @@ h1 {
 	font-size: 50px;
 	line-height: 52px;
 	font-weight: 900;
-	margin: 0 0 30px;
+	margin: 0 0 53px;
 	text-transform: uppercase;
 	text-align: center;
+}
+p {
+	margin: 0 0 10px;
 }

@@ -1,15 +1,140 @@
 .carousel {
 	position: relative;
-}
-.carousel .mask {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-}
-.carousel .mask .slideset {
-	width: 99999px;
-	float: left;
-}
-.carousel .mask .slide {
-	float: left;
+	.mask {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		.container {
+			max-width: 1300px;
+		}
+		.slideset {
+			width: 99999px;
+			float: left;
+		}
+		.slide {
+			float: left;
+		}
+	}
+	.image-holder {
+		float: left;
+		width: 58%;
+		padding-top: 40px;
+		margin-left: -3.5%;
+	}
+	.text-holder {
+		width: 44.5%;
+		float: left;
+		margin-left: -5.3%;
+		.item {
+			display: block;
+			padding: 25px 28px;
+			border: 1px dashed transparent;
+			margin: 0 0 20px;
+			border-radius: 15px;
+			color: $black;
+			transition: border 0.4s;
+			cursor: pointer;
+			&:hover {
+				border-color: #a29f9e;
+				text-decoration: none;
+				.title {
+					color: $orange;
+					border-color: transparent;
+				}
+			}
+			&:last-child {
+				margin: 0;
+			}
+			p {
+				line-height: 30px;
+				margin: 0;
+			}
+			.title {
+				display: inline-block;
+				font-size: 25px;
+				line-height: 27px;
+				font-weight: 700;
+				border-bottom: 1px dashed $black;
+				margin: 0 0 12px;
+				padding: 0 0 2px;
+				transition: border 0.4s, color 0.3s;
+			}
+		}
+	}
+	.pagination {
+		@extend %listreset;
+		@extend %clearfix;
+		float: right;
+		max-width: 87%;
+		display: flex;
+		margin: 0 0 19px;
+		li {
+			padding: 0 0 15px;
+			margin-left: 7%;
+			border-bottom: 4px solid transparent;
+			transition: border 0.3s, color 0.4s;
+			&:hover {
+				border-color: $orange;
+				a {
+					text-decoration: none;
+					color: $orange;
+				}
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&.active {
+				border-color: $orange;
+				a {
+					color: $orange;
+				}
+			}
+		}
+		a {
+			display: block;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 700;
+			color: $black;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+	.current-wrap {
+		clear: both;
+		text-align: center;
+		margin: 0 0 68px;
+		font-size: 16px;
+		line-height: 17px;
+		font-weight: 900;
+		.btn-prev,
+		.current-holder,
+		.btn-next {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.btn-prev,
+		.btn-next {
+			width: 12px;
+			height: 12px;
+			border: 2px solid #000;
+			border-width: 0px 0px 2px 2px;
+			transform: rotate(45deg);
+			transition: border 0.2s;
+			margin-top: 3px;
+			&:hover {
+				text-decoration: none;
+				border-color: $orange;
+			}
+		}
+		.btn-next {
+			transform: rotate(-135deg);
+		}
+		.current-holder {
+			min-width: 55px;
+			span {
+				padding: 0 2px;
+			}
+		}
+	}
 }
