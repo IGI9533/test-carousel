@@ -31,4 +31,9 @@ function initRange() {
 		grid_num: 9,
 		hide_min_max: true
 	});
+
+	var first = $('.irs-grid'),
+		last = $('.irs-grid');
+	first.find('.irs-grid-pol').first().hide();
+	last.find('.irs-grid-pol').last().hide();
 };

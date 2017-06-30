@@ -131,7 +131,7 @@
     var single_html =
         '<span class="irs-bar-edge"></span>' +
         '<span class="irs-shadow shadow-single"></span>' +
-        '<span class="irs-slider single"></span>';
+        '<span class="irs-slider single"><span class="note">drag</span>';
 
     var double_html =
         '<span class="irs-shadow shadow-from"></span>' +
