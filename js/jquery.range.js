@@ -126,7 +126,8 @@
         '<span class="irs-from">0</span><span class="irs-to">0</span><span class="irs-single">0</span>' +
         '</span>' +
         '<span class="irs-grid"></span>' +
-        '<span class="irs-bar"></span>';
+        '<span class="irs-bar"></span>'+
+        '<span class="slider-range-inverse"></span>';
 
     var single_html =
         '<span class="irs-bar-edge"></span>' +
@@ -517,6 +518,7 @@
             this.$cache.to = this.$cache.cont.find(".irs-to");
             this.$cache.single = this.$cache.cont.find(".irs-single");
             this.$cache.bar = this.$cache.cont.find(".irs-bar");
+            this.$cache.inverse = this.$cache.cont.find(".slider-range-inverse");
             this.$cache.line = this.$cache.cont.find(".irs-line");
             this.$cache.grid = this.$cache.cont.find(".irs-grid");
 
@@ -1388,6 +1390,9 @@
 
                 this.$cache.bar[0].style.left = this.coords.p_bar_x + "%";
                 this.$cache.bar[0].style.width = this.coords.p_bar_w + "%";
+
+                this.$cache.inverse[0].style.right = "0px";
+                this.$cache.inverse[0].style.width = 100 - this.coords.p_bar_w + "%";
 
                 if (this.options.type === "single") {
                     this.$cache.s_single[0].style.left = this.coords.p_single_fake + "%";

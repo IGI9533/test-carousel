@@ -17,7 +17,8 @@ function initCarousel() {
 		stretchSlideToMask: true,
 		autoRotation: false,
 		switchTime: 3000,
-		animSpeed: 500
+		animSpeed: 500,
+		step: 1
 	});
 }
 

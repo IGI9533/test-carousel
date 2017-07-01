@@ -202,7 +202,7 @@ p {
       padding: 20px 0; } }
 
 .range-slider-holder {
-  padding: 110px 0; }
+  padding: 110px 0 140px; }
   @media (max-width: 1499px) {
     .range-slider-holder {
       padding: 80px 40px; } }
@@ -211,7 +211,7 @@ p {
       padding: 50px 25px; } }
   @media (max-width: 767px) {
     .range-slider-holder {
-      padding: 15px; } }
+      padding: 30px 15px 40px; } }
   .range-slider-holder .container {
     max-width: 1180px; }
   .range-slider-holder .title {
@@ -657,21 +657,30 @@ p {
   color: #999; }
 
 .irs-line {
-  height: 6px; }
+  height: 6px;
+  background: linear-gradient(to right, #fdf48d 0%, #ffcb00 50%, #ff0c00 100%); }
 
 .irs-line-mid,
 .irs-line-left,
 .irs-line-right {
+  background: none;
+  height: 6px; }
+
+.irs-bar {
+  background: transparent;
+  height: 6px;
+  z-index: 1; }
+
+.irs-bar-edge {
+  display: none; }
+
+.slider-range-inverse {
+  position: absolute;
+  display: block;
+  top: 25px;
+  width: 0;
   background: #ddd;
   height: 6px; }
-
-.irs-bar,
-.irs-bar-edge {
-  background: #ffcb00;
-  height: 6px; }
-
-.irs-bar-edge {
-  width: 12px; }
 
 .irs-grid-pol.small {
   height: 0; }
@@ -684,7 +693,7 @@ p {
   top: -15px;
   height: 6px;
   width: 4px;
-  z-index: 1; }
+  z-index: 2; }
   @media (max-width: 767px) {
     .irs-grid-pol {
       display: none; } }
@@ -704,10 +713,15 @@ p {
   width: 24px;
   height: 24px;
   top: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  z-index: 5; }
+  .irs-slider:hover {
+    box-shadow: 0px 0px 12px 0px #000000; }
   .irs-slider .note {
     position: absolute;
-    top: 36px;
+    padding-top: 36px;
+    top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -723,7 +737,7 @@ p {
     .irs-slider .note:before {
       content: "\2190";
       position: absolute;
-      top: -1px;
+      top: 35px;
       left: -21px; }
       @media (max-width: 767px) {
         .irs-slider .note:before {
@@ -731,7 +745,7 @@ p {
     .irs-slider .note:after {
       content: "\2192";
       position: absolute;
-      top: -1px;
+      top: 35px;
       right: -21px; }
       @media (max-width: 767px) {
         .irs-slider .note:after {
